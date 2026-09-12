@@ -1,7 +1,7 @@
 import 'dart:io';
-import '';
+import 'package:ex01_dart/person.dart';
 
-import 'week_01_dart_demo.dart';
+import 'package:ex01_dart/week_01_dart_demo.dart';
 
 void main(List<String> arguments) {
   String name = prompt('Enter your name: ');

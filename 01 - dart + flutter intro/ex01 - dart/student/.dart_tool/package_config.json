@@ -1,0 +1,16 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "ex01_dart",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.13"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.13.2",
+  "flutterRoot": "file:///C:/Users/Connor/flutter",
+  "flutterVersion": "3.47.2",
+  "pubCache": "file:///C:/Users/Connor/AppData/Local/Pub/Cache"
+}

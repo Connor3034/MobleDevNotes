@@ -1,0 +1,4 @@
+name: ex01_dart
+
+environment:
+ sdk: ^3.13.0
