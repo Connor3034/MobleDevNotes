@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:dictionary_api/dictionary_api.dart' as dictionary_api;
 
 void main() async {
