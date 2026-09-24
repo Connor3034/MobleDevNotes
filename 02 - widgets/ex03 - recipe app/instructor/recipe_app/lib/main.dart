@@ -15,11 +15,14 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueGrey.shade200,
         body: Column(
           children: [ 
-            const Text(
-              "my cool recipe app",
-              style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: const Text(
+                "my cool recipe app",
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ],
