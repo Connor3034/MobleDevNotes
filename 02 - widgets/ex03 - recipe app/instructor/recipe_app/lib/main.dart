@@ -12,11 +12,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('my cool recipe app'),
-        ),
-        body: const Text("My cool recipe will go here"),
         backgroundColor: Colors.blueGrey.shade200,
+        body: Column(
+          children: [ 
+            const Text(
+              "my cool recipe app",
+              style: TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
