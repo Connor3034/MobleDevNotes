@@ -14,22 +14,42 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey.shade200,
         body: Column(
-          children: [ 
+          crossAxisAlignment: CrossAxisAlignment.stretch, // stretch basically givesd you flexbox logic
+                                                          // .stretch alignment means children fill entire width
+          children: [
+
             Padding(
               padding: EdgeInsets.all(16.0),
               child: const Text(
                 "my cool recipe app",
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
+
             Image.asset(
               'assets/images/cool.jpg',
               height: 400,
             ),
-          ],
+
+            Text(
+              'Ingredients',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text("- 500g Eye of Newt"),
+            ),
+
+          ],  
         ),
       ),
     );
