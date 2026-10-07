@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
           headlineLarge: TextStyle(
             fontSize: 44,
             color: colorScheme.primary,
+            fontFamily: 'Playwrite GB J Guides',
           ),
           titleLarge: TextStyle(
             fontSize: 24,
