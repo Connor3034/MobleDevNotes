@@ -52,13 +52,21 @@ class RecipePage extends StatelessWidget {
 
   const RecipePage({super.key});
 
+
   @override
   Widget build(BuildContext context) {
+
+    final border = BorderSide(
+      color: Theme.of(context).colorScheme.primary,
+      width: 6,
+    );
+
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch, // like a flexbox!
                             // .stretch alignment means children fill the entire width
         children: [
+
           Padding(
             padding: EdgeInsets.all(16.0),
             child: Text(
@@ -67,10 +75,19 @@ class RecipePage extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineLarge,
             ),
           ),
-          Image.asset(
-            'assets/images/cool.jpg',
-            height: 480,
+
+          Container(
+            decoration: BoxDecoration(
+              //border: Border(top: border, bottom: border),
+              border: Border.symmetric(horizontal: border),
+            ),
+            child: Image.asset(
+              'assets/images/cool.jpg',
+              height: 480,
+              fit: BoxFit.cover,
+            ),
           ),
+
           const ListWithHeading(
             heading: "Ingredients",
             listItems: [
