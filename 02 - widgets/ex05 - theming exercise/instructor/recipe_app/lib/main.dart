@@ -53,7 +53,6 @@ class RecipePage extends StatelessWidget {
 
   const RecipePage({super.key});
 
-
   @override
   Widget build(BuildContext context) {
 
@@ -89,23 +88,34 @@ class RecipePage extends StatelessWidget {
             ),
           ),
 
-          const ListWithHeading(
-            heading: "Ingredients",
-            listItems: [
-              "- some ingredient",
-              "- some ingredient",
-              "- some ingredient",
-              "- some ingredient",
-              "- some ingredient",
-            ]
-          ),
-          const ListWithHeading(
-            heading: "Instructions",
-            listItems: [
-              '1. take your cream and behold it',
-              '2. whip it good',
-              '3. dip a strawberry',
-            ]
+          // let's keep the image pinned & the text contents scrollable:
+          const Expanded( // child(ren) fill the main axis (horiz. or vert.)
+            // try removing the Expanded wrapping - scrolling no longer works!
+            // you need flex behaviour for the children to auto-expand, rather than be cut off 
+            child: SingleChildScrollView( // just one simple option! we'll look at others later on.
+              child: Column(
+                children: [
+                    ListWithHeading(
+                    heading: "Ingredients",
+                    listItems: [
+                      "- some ingredient",
+                      "- some ingredient",
+                      "- some ingredient",
+                      "- some ingredient",
+                      "- some ingredient",
+                    ]
+                  ),
+                  ListWithHeading(
+                    heading: "Instructions",
+                    listItems: [
+                      '1. take your cream and behold it',
+                      '2. whip it good',
+                      '3. dip a strawberry',
+                    ]
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
